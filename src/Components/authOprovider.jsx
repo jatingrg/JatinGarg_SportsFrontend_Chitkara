@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom';
 const Auth0ProviderWithHistory = ({ children }) => {
   const navigate = useNavigate();
   
-  const domain = "dev-4uxpbfmk7kbkc001.us.auth0.com";  // Correct domain
-  const clientId = "6tmyxGCJzwUu65CrBShoo0KAcp4nXoZm";  // Replace with your actual client ID
+  const domain = "dev-4uxpbfmk7kbkc001.us.auth0.com";  
+  const clientId = "6tmyxGCJzwUu65CrBShoo0KAcp4nXoZm";  
 
   const onRedirectCallback = (appState) => {
     navigate(appState?.returnTo || window.location.pathname);
